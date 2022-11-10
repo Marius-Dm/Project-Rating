@@ -1,5 +1,3 @@
-
-
 const allRatingStars = document.querySelectorAll('.rating_star');
 console.log(allRatingStars);
 
@@ -17,9 +15,7 @@ allRatingStars.forEach( (star, i) =>{
                 
             }else{
                 star.classList.replace('fa-star', 'fa-star-half')
-                // star.classList.replace('fa-xl','fa-sm')
                 star.style.color = 'gray';
-                // star.style.opacity = 0.5;
                 if (star.classList.contains('fa-star-half')) {
                     gsap.to(".fa-star-half",{y: 40, rotation:110});
                     star.style.opacity = 0;
